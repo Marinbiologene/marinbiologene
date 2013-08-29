@@ -1,0 +1,11 @@
+PHP-oversikt Marinbiologene
+
+single.php - post
+home.php - post listings
+front-page - forside
+header.php - topp
+footer.php - bunn
+
+CSS-styles
+
+style.css - tror layout på body kan settes her... f.eks om jeg vil ha ting midtstilt?
