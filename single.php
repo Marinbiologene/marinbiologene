@@ -7,7 +7,7 @@
 		<h1><?php the_title(); ?></h1>
 </ br>		
 <hr>
-		<p>Publisert <em><?php the_time('d/m - Y'); ?></em> (av <strong><?php the_author(); ?></strong>).</p>
+		<p><i class="icon-edit"></i> : <em><?php the_time('d/m - Y'); ?></em> (av <strong><?php the_author(); ?></strong>).</p>
 <hr>
 	  	<?php the_content(); ?>
 <?php if( function_exists( do_sociable() ) ){ do_sociable(); }?>

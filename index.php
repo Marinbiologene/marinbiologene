@@ -5,11 +5,11 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	  <h1><?php the_title(); ?></h1>
-           <p>Posted on <em><?php the_date(); ?></em> (by <strong><?php the_author(); ?></strong>)</p>	
+           <p><i class="icon-edit"></i> : <em><?php the_date(); ?></em> (by <strong><?php the_author(); ?></strong>)</p>	
            <p><?php the_content(); ?></p>
 		
 	<?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
+		<p><?php _e('Beklager, Marinbiologene kan ikke finne denne siden.'); ?></p>
 	<?php endif; ?>
 	
 	<p><?php> comments_template(); ?></p>

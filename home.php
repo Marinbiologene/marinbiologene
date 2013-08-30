@@ -8,6 +8,15 @@ overflow:hidden;
 } 
 </style>
 
+<!--Statement-->
+<div class="row">
+  <div class="span6">
+<p><i class="icon-quote-left icon-2x pull-left icon-muted"></i><em>Innholdet i marinbiobloggen er personlige meninger ytret av forfatterne, og reflekterer ikke standpunkt institusjoner forfatterne er tilknyttet måtte ha.</p>
+</em>
+<p><i class="icon-lightbulb icon-3x pull-left icon-muted"></i>Lyst til å skrive et innlegg om marinbiologi? Ta kontakt og fortell litt om din idé!</p>
+  </div>
+</div>
+
 <!-- Post exerpt-->
 <div class="row">
   <div class="span6">
@@ -16,7 +25,7 @@ overflow:hidden;
      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 </br>
 	<div class="container-fluid">
-	<?php the_content('<button type="submit" class="btn btn-inverse pull-right">Les videre »</button>',$stripteaser); ?> 
+	<?php the_content('<button type="submit" class="btn btn-inverse pull-right">Les videre »</button>'); ?> 
 	
 	</div>
 </br>
@@ -24,8 +33,8 @@ overflow:hidden;
 <!-- Post info -->
 <div class="container-fluid well">
 	
-	     <p>Publisert: <em><?php the_time('d/m - Y'); ?></em> (av <strong><?php the_author(); ?></strong>).</br>
-		Kategori: <?php
+	     <p><i class="icon-edit"></i> : <em><?php the_time('d/m - Y'); ?></em> (av <strong><?php the_author(); ?></strong>).</br>
+		<i class="icon-folder-open"></i> : <?php
 				$categories = get_the_category();
 				$separator = ' ';
 				$output = '';
@@ -36,8 +45,8 @@ overflow:hidden;
 				echo trim($output, $separator);
 				}
 			?></br>
-		<?php the_tags( 'Merkelapper: ', ',' ); ?>  </br>
-		Antall kommentarer: <?php comments_number('Ingen', '1 kommentar','% kommentarer'); ?></p>
+		<?php the_tags( '<i class="icon-tags"></i> : ', ',' ); ?>  </br>
+		<i class="icon-comments-alt"></i> : <?php comments_number('Ingen', '1 kommentar','% kommentarer'); ?></p>
 
 </div>
 

@@ -1,7 +1,7 @@
     <hr>
 
       <footer>
-        <p><em>Laget av Guri for Marinbiologene DA ved hjelp av Bootstrap og Wordpress</em></p>
+        <p><em>Laget av <a href="http://guriandersen.no" target="blank">Guri</a> for Marinbiologene DA ved hjelp av <a href="http://getbootstrap.com/">Bootstrap</a> og <a href="http://wordpress.org">Wordpress</a></em>.</p>
       </footer>
 
     </div> <!-- /container -->

@@ -9,7 +9,7 @@
 	  	<?php the_content(); ?>
 
 	<?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
+		<p><?php _e('Beklager, Marinbiologene kan ikke finne denne siden.'); ?></p>
 	<?php endif; ?>
 
   </div>
