@@ -13,7 +13,8 @@
 <?php if( function_exists( do_sociable() ) ){ do_sociable(); }?>
 
 <a href="http://www.kelp-forest.com/marinbiologene/?page_id=25"><button type="submit" class="btn btn-inverse pull-right"><i class="icon-rotate-left"></i> Tilbake </button><a>
-	  	<hr>
+</br>
+<hr>
 		<?php comments_template(); ?>
 	<?php endwhile; else: ?>
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
