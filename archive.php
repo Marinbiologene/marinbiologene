@@ -57,12 +57,9 @@ overflow:hidden;
       <p><?php _e('Sorry, there are no posts.'); ?></p>
     <?php endif; ?>
 
-<!--Archives-->
-<h3>Arkiv</h3>
-	<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-  	<option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
-  				<?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
-	</select>
+<a href="http://www.kelp-forest.com/marinbiologene/?page_id=25"><button type="submit" class="btn btn-inverse pull-right"><i class="icon-rotate-left"></i> Tilbake </button><a>
+</br>
+<hr>
 
   </div>
   <div class="span6">
