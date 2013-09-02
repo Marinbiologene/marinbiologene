@@ -1,3 +1,6 @@
+<!DOCTYPE html> 
+<html>
+
 <head>
 
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
@@ -15,7 +18,7 @@
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <![endif] -->
 
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
