@@ -1,23 +1,287 @@
 /*
-Theme Name: WP Bootstrap Child
-Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
-Description: Theme built following the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
-Author: Guri Sogn Andersen
-Author URI: http://guriandersen.no/
-Version: 1.0
+Theme Name: MBbootstrap
+Theme URI:
+Description: A simple responsive theme built with Bootstrap
+Author: kelpRmy
+Author URI: http://guriandersen.com/
+Version: 1.2
 Tags: responsive, white, bootstrap
 
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
-This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
 
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css'); 
-body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+
+@import url('bootstrap/css/bootstrap.css');
+
+body { padding-top: 70px; }
+
+.affix-nav {
+  position: fixed;
+  width: 100%;
+  max-width: 350px;
+  top: 5;
 }
 
+.img{
+  width: auto;
+}
+
+
+/* customized links and button colors
+-------------------------------------------------------------- */
+a {
+    color: #003d7a;
+}
+a:hover, a:focus {
+    color: orangered;
+    text-decoration: underline;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #003d7a;
+  border-color: #003d7a;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: orangered;
+  border-color: orangered;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: orangered;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: orangered;
+}
+
+
+/* To improve contact form layout
+-------------------------------------------------------------- */
+
+.contact-form input:-moz-placeholder,
+.contact-form textarea:-moz-placeholder {
+  color: #999999;
+}
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  color: #999999;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.contact-form input::-webkit-input-placeholder, 
+.contact-form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.contact-form-control input [disabled],
+.contact-form-control input [readonly],
+.contact-form-control textarea [disabled],
+.contact-form-control textarea [readonly],
+fieldset[disabled] .wpcf7-form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textarea.contact-form-control {
+  height: auto;
+}
+
+.contact-form input[type="submit"] {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.contact-form input[type="submit"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.contact-form input[type="submit"].disabled,
+.contact-form input[type="submit"][disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.contact-form input[type="submit"] {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:focus,
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  background-image: none;
+}
+.contact-form input[type="submit"].disabled,
+.contact-form input[type="submit"][disabled],
+.contact-form input[type="submit"].disabled:hover,
+.contact-form input[type="submit"][disabled]:hover,
+.contact-form input[type="submit"].disabled:focus,
+.contact-form input[type="submit"][disabled]:focus,
+.contact-form input[type="submit"].disabled:active,
+.contact-form input[type="submit"][disabled]:active,
+.contact-form input[type="submit"].disabled.active,
+.contact-form input[type="submit"][disabled].active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
 

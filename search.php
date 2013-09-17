@@ -5,15 +5,6 @@
 
 <!-- main content --> 
 <div class="col-md-8">
-	
-	<div class="row">
-	<p><i class="icon-quote-left icon-2x pull-left icon-muted"></i><em>
-      Innholdet i marinbiobloggen er personlige meninger ytret av forfatterne, og reflekterer ikke standpunkt institusjoner forfatterne er tilknyttet måtte ha.
-    </em></p>
-    <p><i class="icon-lightbulb icon-3x pull-left icon-muted"></i>
-      Lyst til å skrive et innlegg om marinbiologi? Ta kontakt og fortell litt om din idé!
-    </p>
-    </div>
 
 	<div class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -46,10 +37,13 @@
 			<?php endwhile; else: ?>
 			  <p><?php _e('Beklager, ingen treff.'); ?></p>
 			<?php endif; ?>
-			<?php next_posts_link('Eldre Poster'); ?>
-			<?php previous_posts_link('Nyere Poster'); ?>			
+			<?php next_posts_link('Eldre poster'); ?>
+			<?php previous_posts_link('Nyere poster'); ?>
 	</div>
-	
+
+	<!--Back button-->
+	<span><a href="http://marinbiologene.wpengine.com/blogg/" class="btn btn-primary pull-right"><i class="icon-rotate-left"></i> Tilbake </a></span>
+		
 </div><!-- col-md- (8) -->
 
 <!-- sidebar -->
