@@ -73,7 +73,7 @@
 <div class="row">
 <div class="col-md-8">
 <!-- LOGO -->
-<img alt="" src="http://marinbiologene.wpengine.com/wp-content/uploads/2013/09/MBlogo.gif">
+<img alt="" src="http://marinbiologene.wpengine.com/wp-content/uploads/2013/09/MBlogo.gif" style="img-responsive">
 </div>
 <div class="col-md-4">
 <p><i class="icon-exclamation-sign icon-large icon-muted pull-left"></i><em> Denne siden vises best i <a href="https://www.google.com/intl/en/chrome/">Chrome</a> eller <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Mozilla Firefox</a></em></p>

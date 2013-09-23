@@ -25,7 +25,17 @@
 		<!-- Donations -->
 		<div class="row">
 		<hr>
-        <p>Synes du vi gjør en god jobb? Du kan støtte arbeidet: <?php echo do_shortcode("[sdonations]2[/sdonations]"); ?></p>
+        <p>Synes du vi gjør en god jobb? Du kan støtte arbeidet:</p>
+        <span>
+		<p>
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6WSFSHM626UAQ" style="text-decoration:none;">
+		<i class= "icon-heart icon-2x"></i>&nbsp10&nbspkr </a> 
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55822HMWRD7L4" style="text-decoration:none;">
+		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i>&nbsp20&nbspkr </a>
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7XJBKA62DNCNS" style="text-decoration:none;">
+		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i>&nbsp30&nbspkr </a>
+		</p>
+		</span>
 		</div>
 		
 		<!-- Comments -->
