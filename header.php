@@ -53,7 +53,7 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogg <b class="caret"></b></a>
         <ul class="dropdown-menu">
-                        <li><a href="http://marinbiologene.wpengine.com/blogg">Marinbiobloggen</a></li>
+                        <li><a href="http://marinbiologene.no/blogg">Marinbiobloggen</a></li>
                         <li><a href="http://blog.marinbiologene.no" target="_blank">Gammel blogg</a></li>
 
         </ul>
@@ -62,7 +62,7 @@
 	<ul class="nav navbar-nav navbar-right">
       					<li><a href="https://twitter.com/marinbiologene"><i class="icon-twitter icon-large"></i></a></li>
       					<li><a href="https://www.facebook.com/groups/103107709727700/"><i class="icon-facebook icon-large"></i></a></li>
-      					<li><a href="http://feeds.feedburner.com/marinbiobloggen"><i class="icon-rss icon-large"></i></a></li>
+      					<li><a href="http://feeds.feedburner.com/marinbiologene"><i class="icon-rss icon-large"></i></a></li>
     </ul>    
     
   </div><!-- /.navbar-collapse -->

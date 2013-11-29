@@ -21,7 +21,7 @@
 	<a href="http://marinbiologene.wpengine.com/galleri" style="text-decoration:none;">
 	<i class="icon-picture icon-4x pull-left"></i>
 	<h2>Galleri</h2></a>
-	<p>I galleriet kan du se flotte bilder av livet som befinner seg under havoverflaten. Bildene er sendt inn av lesere. Vi putter gjerne inn flere, -så send dine egne blinkskudd!</p>
+	<p>I galleriet kan du se flotte bilder av livet som befinner seg under havoverflaten. Bildene er sendt inn av lesere. Vi putter gjerne inn flere, - så send dine egne blinkskudd!</p>
 	</div> <!-- col-md-4 -->
 </div>
 </div>
@@ -68,7 +68,7 @@
 	<div class="col-md-4">
 	<i class="icon-smile icon-4x pull-left"></i>
 	<h2>Fjas</h2>
-	<p>Kjeder du deg litt? Sjekk ut våre marine quizer da vel :)
+	<p>Sjekk ut våre marine quizer da vel :)
 	<ul>
 		<li><a href="http://www.aftenposten.no/quiz/?id=13102" target="_blank">Quiz om marint søppel</a></li>
 		<li><a href="http://tjenester.aftenposten.no/quiz/quiz.htm?method=start&amp;id=12233" target="_blank">Havbruk og oppdrettsquiz</a></li>
