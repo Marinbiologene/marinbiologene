@@ -56,11 +56,11 @@
 		<span align="center">
 		<p>
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QY8THVZP2HY92" style="text-decoration:none;">
-		<i class= "icon-coffee icon-2x"></i>&nbsp25&nbspkr </a> 
+		<i class= "icon-coffee icon-2x"></i> 25kr </a> 
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9JGYKF9BEQWH6" style="text-decoration:none;">
-		<i class= "icon-gift icon-2x"></i>&nbsp50&nbspkr </a>
+		<i class= "icon-gift icon-2x"></i> 50kr </a>
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N87F3V4LL76HU" style="text-decoration:none;">
-		<i class= "icon-star icon-2x"></i>&nbsp200&nbspkr </a>
+		<i class= "icon-star icon-2x"></i> 200kr </a>
 		</p>
 		</span>
 	</div> <!-- col-md- -->

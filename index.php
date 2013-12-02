@@ -6,42 +6,44 @@
   <div class="col-md-8">
 
 	<!-- Post info -->
-	<div class="row">
+
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	  <h1><?php the_title(); ?></h1>
            <p><i class="icon-time"></i> <em><?php the_date(); ?></em></p>	
-	</div>
+
 
 
 		<!-- Content -->
-		<div class="row">
+
            <p><?php the_content(); ?></p>
+           </br>
+           <p><em>Denne posten ble skrevet av: <?php the_author(); ?></em></p> 
 		
 			<?php endwhile; else: ?>
 			<p><?php _e('Sorry, this page does not exist.'); ?></p>
 			<?php endif; ?>
-		</div>	
+
 		
 		<!-- Donations -->
-		<div class="row">
+
 		<hr>
         <p>Synes du vi gjør en god jobb? Du kan støtte arbeidet:</p>
         <span>
 		<p>
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6WSFSHM626UAQ" style="text-decoration:none;">
-		<i class= "icon-heart icon-2x"></i>&nbsp10&nbspkr </a> 
+		<i class= "icon-heart icon-2x"></i> 10kr </a> 
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55822HMWRD7L4" style="text-decoration:none;">
-		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i>&nbsp20&nbspkr </a>
+		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i> 20kr </a>
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7XJBKA62DNCNS" style="text-decoration:none;">
-		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i>&nbsp30&nbspkr </a>
+		<i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i><i class= "icon-heart icon-2x"></i> 30kr </a>
 		</p>
 		</span>
-		</div>
+
 		
 		<!-- Comments -->
-		<div class="row">
+
 		<p><?php comments_template(); ?></p>	
-		</div>	
+
 		
   </div> <!-- col-md-8-->
 

@@ -6,24 +6,20 @@
 <!-- main content --> 
 <div class="col-md-8">
 	
-	<div class="row">
 	<p><i class="icon-quote-left icon-2x pull-left icon-muted"></i><em>
       Innholdet i marinbiobloggen er personlige meninger ytret av forfatterne, og reflekterer ikke standpunkt institusjoner forfatterne er tilknyttet måtte ha.
     </em></p>
     <p><i class="icon-lightbulb icon-3x pull-left icon-muted"></i>
       Lyst til å skrive et innlegg om marinbiologi? Ta kontakt og fortell litt om din idé!
     </p>
-    </div>
-
-	<div class="row">
+    
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	</div> <!-- row -->
 	
-			<!-- Post info -->
-	<div class="row"> 	
+			<!-- Post info -->	
 			<div class="well"> 	
-				<p><i class="icon-time"></i> <em><?php the_time('l, F jS, Y'); ?></em></br>
+				<p><i class="icon-time"></i> <em><?php the_date(); ?></em></br>
+					<i class="icon-user"></i> <?php the_author(); ?></br> 
 					<i class="icon-folder-open"></i> <?php
 							$categories = get_the_category();
 							$separator = ', ';
@@ -38,9 +34,7 @@
 					<i class="icon-comments-alt"></i> <?php comments_number('Ingen', '1 kommentar','% kommentarer'); ?>	
 				</p>
 			</div> <!-- well -->
-	</div>
 
-	<div class="row">
 		    <p><?php the_content('Les videre <i class="icon-play-circle icon-large"></i>'); ?>			
 			</br><hr></p>
 			<?php endwhile; else: ?>
@@ -48,7 +42,6 @@
 			<?php endif; ?>
 			<?php next_posts_link('Eldre Poster'); ?>
 			<?php previous_posts_link('Nyere Poster'); ?>			
-	</div>
 	
 </div><!-- col-md- (8) -->
 
@@ -65,9 +58,9 @@
 	
 <div class="container">
 	<!-- Archive -->
-	<div class="row">
+
 		<h2>Arkiv</h2>
-	</div> 
+
 
 	<div class="row">
 		<div class="col-md-4">

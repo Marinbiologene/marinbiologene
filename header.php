@@ -60,6 +60,7 @@
       </li>
     </ul>
 	<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://marinbiologene.no/category/jul/">Julekalender</a></li>
       					<li><a href="https://twitter.com/marinbiologene"><i class="icon-twitter icon-large"></i></a></li>
       					<li><a href="https://www.facebook.com/groups/103107709727700/"><i class="icon-facebook icon-large"></i></a></li>
       					<li><a href="http://feeds.feedburner.com/marinbiologene"><i class="icon-rss icon-large"></i></a></li>
@@ -69,7 +70,7 @@
 </div><!-- container -->
 </nav>
 
-<div class="container">
+<div class="container hidden-xs">
 <div class="row">
 <div class="col-md-8">
 <!-- LOGO -->

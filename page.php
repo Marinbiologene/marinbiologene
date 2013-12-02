@@ -26,7 +26,7 @@
 <!-- footer -->
 <div class="container">
 <div class="row">
-<div class="col-md-12"> <!-- ends in footer -->
+<div class="col-md-8"> <!-- ends in footer -->
 	<?php get_footer(); ?>
 
 
